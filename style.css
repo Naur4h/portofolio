@@ -103,7 +103,7 @@ body {
 
   .tentang {
   color: white;
-  padding-block: 30px;
+  padding-block: 20px;
   background-color: rgb(189, 153, 223);
   }
 
@@ -140,14 +140,12 @@ body {
   .tentang-box .box:nth-child(1){
   display: grid;
   grid-template-columns:repeat(2,1fr) ;
-  margin-bottom: 150px;
   align-self: center;
   }
 
    .tentang-box .box:nth-child(1) p {
   text-align: justify;
   line-height: 2;
-  margin-bottom: 18px;
   }
 
    .tentang-box .box:nth-child(1) p span{
@@ -209,6 +207,46 @@ body {
   border-radius: 2px;
 }
 
+/* BANTUAN AJA */
+.marg {
+  margin-bottom: 400px;
+}
+
+.my-project p {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  font-weight: 650;
+  background-color:  rgb(189, 153, 223);
+  width: 40%;        /* fleksibel sesuai layar */ /* biar ga kepanjangan di layar gede */
+  margin: 10px auto;
+  border-radius: 55px; 
+  padding: 15px 0;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  transition: width 0.4s ease;
+}
+
+/* hover efek pindah ke p */
+.my-project p:hover {
+  width: 85%; /* contoh, biar ada perubahan */
+}
+
+
+  @media (max-width:768px) {
+   .my-project p {
+  font-size: 23px;
+  width: 65%;
+   }
+  }
+.wave-bawah {
+ margin-top: -20px;
+}
+
+
+
+
+
+/* RESPONSIVE */
 @media (max-width: 992px) {
   .navbar-box .menu {
     gap: 30px; /* biar ga kepanjangan */
@@ -231,6 +269,7 @@ body {
     align-items: center;
   }
 }
+
 
 /* Mobile (<= 768px) */
 @media (max-width: 768px) {
