@@ -373,10 +373,17 @@ margin-right: 20px;
     
 }
 
-.connect-text .beside-cc {
-    border-radius: 20px;
-    padding: 3px 12px 3px 12px;
-   
+.reach-out {
+  color: rgb(231, 214, 244);
+  font-weight: 600;
+  font-size: 20px;
+  background-color:  rgb(150, 89, 207);
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  width: fit-content;
+  justify-self: center;
+   box-shadow: 3px 3px 2px rgba(0,0,0,0.3);
 }
 
 
