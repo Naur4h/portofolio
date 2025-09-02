@@ -210,11 +210,6 @@ body {
   border-radius: 2px;
 }
 
-/* BANTUAN AJA */
-.marg {
-  margin-bottom: 400px;
-}
-
 .my-project p {
   text-align: center;
   color: white;
@@ -236,7 +231,7 @@ display: grid;
   grid-template-columns: repeat(2, 1fr);
   place-items: center; /* center horizontal + vertical */
   gap: 20px; 
- 
+  margin-bottom: 100px;
   /* center vertical */
 
 }
@@ -250,6 +245,7 @@ margin-right: 20px;
  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
   align-items: center;    /* biar semua ke tengah */
   text-align: center;
+ 
  
 }
 .project-agrifarm img, .project-porto img{
@@ -268,6 +264,7 @@ margin-right: 20px;
   margin-bottom: 30px;
  transition: 0.3s;
  
+ 
 
 }
 
@@ -281,6 +278,8 @@ margin-right: 20px;
     color: white;
     font-size: 15px;
     font-weight: bold;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.2);
+
 }
 
 .demo-code a:hover {
@@ -304,18 +303,119 @@ margin-right: 20px;
    }
 
    .demo-code a {
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
    }
   }
+
+
+ .connect-text {
+    margin-top: 50px;
+    text-align: center;
+ }
+.connect-text .span-thanks {
+    font-size: 65px;
+    color:  rgb(150, 89, 207);
+    font-weight: bold;
+    text-shadow: 4px 4px 3px rgba(0,0,0,0.3);
+}
+
+.connect-text .below-thanks {
+    font-size: 60px;
+    font-weight: 550;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+    margin-bottom: 50px;
+}
+
+ @media (max-width:768px) {
+    .connect-text .span-thanks {
+    font-size: 55px;
+}
+
+.connect-text .below-thanks {
+    font-size: 30px;
+}
+
+.connect-text .naurah-contact {
+    margin-bottom: 40px;
+}
+
+ }
+
+ 
+.naurah-contact {
+
+    justify-self: center;
+    align-items: center;
+
+}
+
+ @media (max-width:768px) {
+.naurah-contact {
+    align-content: center;
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+ }
+ }
+
+.connect-text .naurah-contact {
+    background-color:  rgb(150, 89, 207);
+    font-weight: 600;
+    color: white;
+    font-size: 20px;
+    padding: 12px 25px 12px 25px;
+    border-radius: 30px;
+    width: fit-content;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+    
+}
+
+.connect-text .beside-cc {
+    border-radius: 20px;
+    padding: 3px 12px 3px 12px;
+   
+}
+
+
+.contact-info {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    font-weight: 500;
+    gap: 30px;
+}
+
+
+
+
+.contact-info span {
+    font-size: 14px;
+}
+
+
+.footer p {
+    margin-top: 40px;
+  text-align: center;   /* teks ditengah horizontal */
+  padding: 20px;        /* kasih jarak biar gak mepet */
+  font-size: 14px;  
+  font-weight: 500;    /* ukuran tulisan */
+  color: #efffe9;
+  background-color:  rgb(150, 89, 207);      /* warna abu-abu soft */
+ /* opsional: kasih warna background */
+}
 
 .wave-bawah {
  margin-top: -20px;
 }
 
-
+.university a, .github a, .email a, .telephone a {
+  font-weight: 600;
+  text-decoration: none;
+  color: rgb(150, 89, 207);  ;
+}
 
 
 
@@ -324,6 +424,11 @@ margin-right: 20px;
   .navbar-box .menu {
     gap: 30px; /* biar ga kepanjangan */
     flex-wrap: wrap;
+  }
+
+  .contact-info {
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(4,1fr);
   }
 
   .tentang .container > h1 {
