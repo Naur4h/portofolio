@@ -396,6 +396,9 @@ margin-right: 20px;
     justify-self: center;
 }
 
+.contact-info p {
+  text-align: center;
+}
 .contact-info span {
     font-size: 14px;
 }
