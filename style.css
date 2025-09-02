@@ -171,7 +171,7 @@ body {
 }
 
 
-.dafpro {
+.linkedin {
   display: inline-block;
   margin-top: 15px;
   padding: 10px 20px;
@@ -183,7 +183,7 @@ body {
   
 }
 
-.dafpro:hover {
+.linkedin:hover {
   background: rgb(160, 120, 200);
 
 }
@@ -230,6 +230,63 @@ body {
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
+
+.two-projects {
+display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center; /* center horizontal + vertical */
+  gap: 20px; 
+ 
+  /* center vertical */
+
+}
+
+.project-agrifarm, .project-porto{
+  margin-top: 50px;
+ border: 10px solid  rgb(189, 153, 223);
+ border-radius: 30px;
+margin-left: 20px;
+margin-right: 20px;
+ box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+  align-items: center;    /* biar semua ke tengah */
+  text-align: center;
+ 
+}
+.project-agrifarm img, .project-porto img{
+  width: 90%;
+   justify-content: center;
+     margin-bottom: 30px;
+     background-color:  rgb(189, 153, 223);
+
+}
+
+.demo-code {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+ justify-self: center;
+  gap: 80px;
+  margin-bottom: 30px;
+ transition: 0.3s;
+ 
+
+}
+
+.demo-code a {
+    text-decoration: none;
+  background-color: rgb(150, 89, 207);
+  padding: 15px;
+  padding-right: 50px;
+  padding-left: 50px;
+    border-radius: 25px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.demo-code a:hover {
+  background-color:  rgb(184, 143, 222);
+}
+
 /* hover efek pindah ke p */
 .my-project p:hover {
   width: 85%; /* contoh, biar ada perubahan */
@@ -241,7 +298,18 @@ body {
   font-size: 20px;
   width: 85%;
    }
+
+   .two-projects {
+    grid-template-columns: repeat(1,1fr);
+   }
+
+   .demo-code a {
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+   }
   }
+
 .wave-bawah {
  margin-top: -20px;
 }
