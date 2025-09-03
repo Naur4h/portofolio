@@ -9,8 +9,8 @@
 body {
   background-color: white;
   background-image: 
-    linear-gradient(to right, rgba(0,0,0,0.1) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(0,0,0,0.1) 1px, transparent 1px);
+  linear-gradient(to right, rgba(0,0,0,0.1) 1px, transparent 1px),
+  linear-gradient(to bottom, rgba(0,0,0,0.1) 1px, transparent 1px);
   background-size: 50px 50px; /* ukuran kotaknya */
 }
 
@@ -20,7 +20,6 @@ body {
   
 }
 .navbar {
-  
   padding: 30px 0;
   background-color: rgb(161, 99, 219);
   width: 90%;        /* fleksibel sesuai layar */ /* biar ga kepanjangan di layar gede */
@@ -39,8 +38,6 @@ body {
   display: flex;
   align-items: center;
   gap: 55px;
-
-
 }
 
 .navbar-box .menu li{
@@ -57,19 +54,18 @@ body {
 .navbar-box .menu li a:hover{
   font-weight: bold;
   color: rgb(0, 0, 0);
-  
 }
 
   .hero{
   margin-block: 20px;
-  }
+}
 
   .hero-box {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
   gap: 40px;
-  }
+}
 
   .hero-box img {
   width: 30%;       
@@ -80,32 +76,29 @@ body {
 }
   .hero-box img:hover {
   transform: scale(1.1); /* zoom 20% */
-  }
+}
 
-    
-  
   .hero-box h1 {
   text-align: center;
   font-weight: 400;
   font-size: 40px;
   line-height: 1.3;
-    
-  }
+}
 
   .hero-box h1 span {
   font-weight: bold;
   color:rgb(189, 153, 223);
-  }
+}
 
   header svg {
   margin-bottom: -10px;
-  }
+}
 
   .tentang {
   color: white;
   padding-block: 20px;
   background-color: rgb(189, 153, 223);
-  }
+}
 
   .tentang .container > h1 {
   text-align: center;
@@ -119,41 +112,31 @@ body {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   transition: width 0.4s ease;
   text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
-
-  
-  
 }
 
  .tentang .container > h1:hover {
   width: 100%;
  }
 
-  @media (max-width:768px) {
-   .tentang .container > h1 {
-  font-size: 25px;
-  width: 55%;
-   }
-  }
-  
   .tentang-box {
-    margin-top: 35px;
-  }
+  margin-top: 35px;
+}
 
   .tentang-box .box:nth-child(1){
   display: grid;
   grid-template-columns:repeat(2,1fr) ;
   align-self: center;
-  }
+}
 
-   .tentang-box .box:nth-child(1) p {
+  .tentang-box .box:nth-child(1) p {
   text-align: justify;
   line-height: 2;
-  }
+}
 
-   .tentang-box .box:nth-child(1) p span{
+  .tentang-box .box:nth-child(1) p span{
   font-weight: bold;
+ }
 
-  }
   .foto{
   width: 60%;
   display: block;        
@@ -180,12 +163,10 @@ body {
   text-decoration: none;
   border-radius: 8px;
   transition: 0.3s;
-  
 }
 
 .linkedin:hover {
   background: rgb(160, 120, 200);
-
 }
   
 .tools-box {
@@ -195,7 +176,6 @@ body {
   border: 1px solid white;
   padding: 10px;
   border-radius: 5px;
-
 }
 
 .tools-box:hover {
@@ -204,7 +184,6 @@ body {
 }
 
 .tools-box img {
-  
   width: 30px;
   background-color: white;
   border-radius: 2px;
@@ -227,151 +206,105 @@ body {
 
 
 .two-projects {
-display: grid;
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
-  place-items: center; /* center horizontal + vertical */
+  place-items: center; 
   gap: 20px; 
   margin-bottom: 100px;
-  /* center vertical */
-
 }
 
 .project-agrifarm, .project-porto{
   margin-top: 50px;
- border: 10px solid  rgb(189, 153, 223);
- border-radius: 30px;
-margin-left: 20px;
-margin-right: 20px;
- box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
-  align-items: center;    /* biar semua ke tengah */
+  border: 10px solid  rgb(189, 153, 223);
+  border-radius: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+  align-items: center;    
   text-align: center;
- 
- 
 }
+
 .project-agrifarm img, .project-porto img{
   width: 90%;
-   justify-content: center;
-     margin-bottom: 30px;
-     background-color:  rgb(189, 153, 223);
-
+  justify-content: center;
+  margin-bottom: 30px;
+  background-color:  rgb(189, 153, 223);
 }
 
 .demo-code {
   display: grid;
   grid-template-columns: repeat(2,1fr);
- justify-self: center;
+  justify-self: center;
   gap: 80px;
   margin-bottom: 30px;
- transition: 0.3s;
- 
- 
-
+  transition: 0.3s;
 }
 
 .demo-code a {
-    text-decoration: none;
+  text-decoration: none;
   background-color: rgb(150, 89, 207);
   padding: 15px;
   padding-right: 50px;
   padding-left: 50px;
-    border-radius: 25px;
-    color: white;
-    font-size: 15px;
-    font-weight: bold;
-    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.2);
-
+  border-radius: 25px;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.2);
 }
 
 .demo-code a:hover {
   background-color:  rgb(184, 143, 222);
 }
 
-/* hover efek pindah ke p */
 .my-project p:hover {
-  width: 85%; /* contoh, biar ada perubahan */
+  width: 85%; 
 }
 
-
-@media (max-width:768px) {
-.my-project p {
-  font-size: 20px;
-  width: 85%;
-   }
-
-   .two-projects {
-    grid-template-columns: repeat(1,1fr);
-   }
-
-   .demo-code a {
-    padding: 10px;
-    border-radius: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-   }
-  }
-
-
- .connect-text {
-    margin-top: 50px;
-    text-align: center;
+.connect-text {
+  margin-top: 50px;
+  text-align: center;
  }
+
 .connect-text .span-thanks {
-    font-size: 65px;
-    color:  rgb(150, 89, 207);
-    font-weight: bold;
-    text-shadow: 4px 4px 3px rgba(0,0,0,0.3);
+  font-size: 65px;
+  color:  rgb(150, 89, 207);
+  font-weight: bold;
+  text-shadow: 4px 4px 3px rgba(0,0,0,0.3);
 }
 
 .connect-text .below-thanks {
-    font-size: 60px;
-    font-weight: 550;
-    text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
-    margin-bottom: 50px;
+  font-size: 60px;
+  font-weight: 550;
+  text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+  margin-bottom: 50px;
 }
 
- @media (max-width:768px) {
-    .connect-text .span-thanks {
-    font-size: 55px;
-}
 
 .connect-text .below-thanks {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .connect-text .naurah-contact {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
- }
-
- 
 .naurah-contact {
-
-    justify-self: center;
-    align-items: center;
-
+  justify-self: center;
+  align-items: center;
 }
-
- @media (max-width:768px) {
-.naurah-contact {
-    align-content: center;
-    align-self: center;
-    justify-self: center;
-    align-items: center;
- }
- }
 
 .connect-text .naurah-contact {
-    background-color:  rgb(150, 89, 207);
-    font-weight: 600;
-    color: white;
-    font-size: 20px;
-    padding: 12px 25px 12px 25px;
-    border-radius: 30px;
-    width: fit-content;
-    box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
-    
+  background-color:  rgb(150, 89, 207);
+  font-weight: 600;
+  color: white;
+  font-size: 20px;
+  padding: 12px 25px 12px 25px;
+  border-radius: 30px;
+  width: fit-content;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.3); 
 }
+
 .reach-out {
   color: rgb(231, 214, 244);
   font-weight: 600;
@@ -382,37 +315,36 @@ margin-right: 20px;
   border-radius: 5px;
   width: fit-content;
   box-shadow: 3px 3px 2px rgba(0,0,0,0.3);
-  margin: 0 auto; /* ini bikin center horizontal */
+  margin: 0 auto; 
 }
 
-
 .contact-info {
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);
-    font-weight: 500;
-    gap: 30px;
-    justify-self: center;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(2,1fr);
+  font-weight: 500;
+  gap: 30px;
+  justify-self: center;
 }
 
 .contact-info p {
   text-align: center;
 }
+
 .contact-info span {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 
 .footer p {
-    margin-top: 40px;
-  text-align: center;   /* teks ditengah horizontal */
-  padding: 20px;        /* kasih jarak biar gak mepet */
+  margin-top: 40px;
+  text-align: center; 
+  padding: 20px;       
   font-size: 14px;  
-  font-weight: 500;    /* ukuran tulisan */
+  font-weight: 500;   
   color: #efffe9;
-  background-color:  rgb(150, 89, 207);      /* warna abu-abu soft */
- /* opsional: kasih warna background */
+  background-color:  rgb(150, 89, 207);   
 }
 
 .wave-bawah {
@@ -426,11 +358,10 @@ margin-right: 20px;
 }
 
 
-
 /* RESPONSIVE */
 @media (max-width: 992px) {
   .navbar-box .menu {
-    gap: 30px; /* biar ga kepanjangan */
+    gap: 30px; 
     flex-wrap: wrap;
   }
 
@@ -445,7 +376,7 @@ margin-right: 20px;
   }
 
   .tentang-box .box:nth-child(1) {
-    grid-template-columns: 1fr; /* jadi 1 kolom */
+    grid-template-columns: 1fr;
     text-align: center;
   }
 
@@ -471,7 +402,7 @@ margin-right: 20px;
   }
 
   .hero-box {
-    flex-direction: column; /* biar foto & teks ke bawah */
+    flex-direction: column;
     gap: 20px;
   }
 
@@ -484,8 +415,8 @@ margin-right: 20px;
   }
 
   .tentang .container > h1 {
-    font-size: 22px;
-    width: 80%;
+    font-size: 25px;
+    width: 60%;
   }
 
   .tentang-box .box:nth-child(1) {
@@ -507,4 +438,30 @@ margin-right: 20px;
     gap: 5px;
     text-align: center;
   }
+
+  .my-project p {
+  font-size: 20px;
+  width: 85%;
+  }
+
+  .two-projects {
+  grid-template-columns: repeat(1,1fr);
+  }
+
+  .demo-code a {
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  }
+  .connect-text .span-thanks {
+  font-size: 55px;
+  }
+
+  .naurah-contact {
+  align-content: center;
+  align-self: center;
+  justify-self: center;
+  align-items: center;
+ }
 }
